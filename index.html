@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
     <title>Tanshul Kumar - Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
   </head>
-  <body>
+  <body ng-init="skills=['Coldfusion','Jquery','Css','Html5','Php (wordpress)']">
     <div class="container">
         <h1>Coldfusion / Wordpress /  Front  End Developer</h1>
         
@@ -18,11 +18,16 @@
             <li>mobile: +679 9362729</li>
             <li>linked in: <a href="http://www.linkedin.com/in/tanshul">Join Me</a></li>
         </ul>
+        <br>
+        <h2>Skills:</h2>
+        <ul>
+        <li ng-repeat="skillset in skills">{{ skillset }}</li>
+        </ul>
     </div> <!-- /container -->
 
     <footer>
 &nbsp;
     </footer>
- 
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" type="application/javascript"></script>
   </body>
 </html>
