@@ -454,3 +454,13 @@ Small Device Styles
 	opacity: 0;
 	filter: alpha(opacity=0);
 	}
+
+  .icons_ul li{
+    font-style: none;
+    display: inline;
+  }
+.icons {
+   font-size:52px;
+   color:#bdc3c7;
+   text-shadow:none;
+}
