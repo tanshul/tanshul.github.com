@@ -363,7 +363,7 @@ Full-Width Styles
 }
 
 #main_content {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 #footer_wrap {
@@ -463,4 +463,5 @@ Small Device Styles
    font-size:52px;
    color:#bdc3c7;
    text-shadow:none;
+   padding-top:5px;
 }
