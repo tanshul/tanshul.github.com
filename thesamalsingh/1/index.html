@@ -28,16 +28,46 @@
 			<header class="clearfix">
 				<h1>SAMAL SINGH</h1>	
 				<ul>
-					<li>the brand</li>
-					<li>sponsors</li>
- 					<li>about me</li>
-					<li>contact me</li>
-					<li>
+					<li><a href="#" id="brand">the brand</a></li>
+					<li><a href="#" id="sponsors">sponsors</a></li>
+ 					<li><a href="#" id="about">about me</a></li>
+					<li><a href="#" id="contact">contact me</a></li>
+					<!--li>
 						<span class="entypo-left-open-big"></span><span>&nbsp;&nbsp;</span><span class="entypo-right-open-big"></span>
-					</li>	
+					</li-->	
 				</ul>				 
 			</header>	
 		 
+		 <section class="cotentb">
+		 	<div class="brand sub">
+		 			<h2>The Brand</h2>
+		 			<p>
+						Stunning costume design and styling in fusion of Indian and western looks has made Samal Singh one of the recognised names in the Fiji Fashion industry.
+					</p>
+					<p>
+Samal Singh ventured into the mainstream fashion industry in 2010 as an Emerging fashion designer. Having won the first award as Most Promising Designer of the year at Fiji Fashion Week in 2011. He travelled to KOOKAI, Melbourne, Australia for his intern-ship with the famous fashion house KOOKAI.</p>
+<p>
+Samal has now concrete himself as an Established fashion designer. His label “The Samal Singh” is a signature of opulent contemporary Indian Fusion . Some of the known famous faces of Fiji like Riddhi Damodar, Aliyah Jan, Rachael Fairfax, Lina Naidu, Zoya Sahib, Zyesha Reynolds, Shristi Singh, Janey Westbury and Jackey Emery has been seen in “The Samal Singh”.</p>
+		
+		 	</div>
+		 	<div class="sponsors sub">
+		 			<h2>Sponsors</h2>
+		 			<h3>Subrails Furniture Center</h3>
+		 			<p>
+
+Subrails Furniture Centre is a furniture retailer based in Fiji Islands operating 12 retail outlets in Rakiraki, Tavua, Ba, Lautoka, Nadi, Sigatoka, Navua,Nabua, Laucala Beach Estate and Nausori. They carry the largest range of quality locally manufactured lounge suites, dining suites, beddings, mattresses, wardrobes, coffee tables as well as wall units. What’s more is that Subrails Furniture Centre manufactures their own products at their sister facility right here in Fiji making after sales services and quality workmanship readily available. The home of quality furniture remains confident about giving customers great value products and services.
+
+
+		 			</p>
+		 	</div>		 	
+		 	<div class="about sub">
+		 			<h2>About</h2>
+		 	</div>	
+		 	<div class="contact sub">
+		 			<h2>Contact</h2>
+		 	</div>
+		 </section>
+
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
@@ -46,10 +76,20 @@
 		<script src="js/waypoints.min.js"></script>
 		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
 		<script src="js/jquery.debouncedresize.js"></script>
-		<script src="js/cbpFixedScrollLayout.min.js"></script>
-		<script>
+ 		<script>
 			$(function() {
-				cbpFixedScrollLayout.init();
+				$("header li a").click(function(){
+					var c = $(this).attr("id");
+					$(".sub").hide();
+					$("."+c).fadeIn();
+					return false;
+				});
+
+				$("body").click(function(){
+					$(".sub").hide();
+					return false;
+
+				});
 			});
 		</script>
 	</body>
