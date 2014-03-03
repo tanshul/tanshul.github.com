@@ -142,16 +142,9 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 60px;
   padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
-
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
 pre, code {
@@ -254,8 +247,9 @@ form {
 }
 
 img {
-  width: 100%;
-  max-width: 100%;
+  width: 160px;
+  max-width: 160px;
+  float:left;
 }
 
 /*******************************************************************************
@@ -388,7 +382,7 @@ Full-Width Styles
   border-radius: 99em;
   border: 5px solid #eee;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
-  background: url(https://pbs.twimg.com/profile_images/1738699178/a611231399_452768_298_bigger.jpg) -25px 0px no-repeat;
+  //background: url(https://pbs.twimg.com/profile_images/1738699178/a611231399_452768_298_bigger.jpg) -25px 0px no-repeat;
   }
 
 .circular img {
@@ -406,6 +400,10 @@ Full-Width Styles
    text-shadow:none;
    padding-top:5px;
 }
+
+.logo{
+  max-width:100%;margin:0 auto;
+}
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -414,11 +412,17 @@ Small Device Styles
   body {
     font-size:14px;
   }
-#main_content{
-padding:10px;
-width: 300px;
+.logo{
+  max-width: 35px;
+  max-height: 35px;
+  position: absolute;
+  left: 90px;
+  top: 10px;
 }
- 
+  #main_content{
+    padding:10px;
+    width: 300px;
+  }
 
   .inner {
     min-width: 320px;
